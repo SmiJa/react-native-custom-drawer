@@ -1,10 +1,34 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { SafeAreaView, View, Text, TouchableOpacity } from 'react-native';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-export default function OnboardingScreen() {
+export default function OnboardingScreen({navigation}) {
   return (
-    <View>
-      <Text>LetsBegin</Text>
-    </View>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#fff'
+      }}>
+      <View style={{marginTop: 20}}>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#AD40AF',
+            padding: 20,
+            width: '90%',
+            borderRadius: 10,
+            marginBottom: 50,
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+          }}
+          onPress={() => navigation.navigate('Login')}
+        >
+          <Text>
+            Let's Begin
+          </Text>
+        </TouchableOpacity>
+      </View>
+      
+    </SafeAreaView>
   )
 }
