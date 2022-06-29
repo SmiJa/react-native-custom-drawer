@@ -1,5 +1,5 @@
 Arguments: 
-  /snap/node/6331/bin/node /snap/node/6331/bin/yarn.js add react-native-gesture-handler@~2.2.1 react-native-reanimated@~2.8.0
+  /snap/node/6331/bin/node /snap/node/6331/bin/yarn.js add react-native-gesture-handler@~2.2.1
 
 PATH: 
   /home/jason/.nvm/versions/node/v16.13.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -41,11 +41,13 @@ npm manifest:
     "dependencies": {
       "@react-navigation/drawer": "^6.4.2",
       "@react-navigation/native": "^6.0.10",
+      "@react-navigation/native-stack": "^6.6.2",
       "expo": "~45.0.0",
       "expo-status-bar": "~1.3.0",
       "react": "17.0.2",
       "react-dom": "17.0.2",
-      "react-native": "0.68.2",
+      "react-native": "^0.68.2",
+      "react-native-vector-icons": "^9.2.0",
       "react-native-web": "0.17.7"
     },
     "devDependencies": {
@@ -1767,6 +1769,14 @@ Lockfile:
     "resolved" "https://registry.npmjs.org/@react-navigation/elements/-/elements-1.3.3.tgz"
     "version" "1.3.3"
   
+  "@react-navigation/native-stack@^6.6.2":
+    "integrity" "sha512-pFMuzhxbPml5MBvJVAzHWoaUkQaefAOKpuUnAs/AxNQuHQwwnxRmDit1PQLuIPo7g7DlfwFXagDHE1R0tbnS8Q=="
+    "resolved" "https://registry.npmjs.org/@react-navigation/native-stack/-/native-stack-6.6.2.tgz"
+    "version" "6.6.2"
+    dependencies:
+      "@react-navigation/elements" "^1.3.3"
+      "warn-once" "^0.1.0"
+  
   "@react-navigation/native@^6.0.0", "@react-navigation/native@^6.0.10":
     "integrity" "sha512-H6QhLeiieGxNcAJismIDXIPZgf1myr7Og8v116tezIGmincJTOcWavTd7lPHGnMMXaZg94LlVtbaBRIx9cexqw=="
     "resolved" "https://registry.npmjs.org/@react-navigation/native/-/native-6.0.10.tgz"
@@ -2578,6 +2588,15 @@ Lockfile:
       "strip-ansi" "^6.0.0"
       "wrap-ansi" "^6.2.0"
   
+  "cliui@^7.0.2":
+    "integrity" "sha512-OcRE68cOsVMXp1Yvonl/fzkQOyjLSu/8bhPDfQt0e0/Eb283TKP20Fs2MqoPsr9SwA595rRCA+QMzYc9nBP+JQ=="
+    "resolved" "https://registry.npmjs.org/cliui/-/cliui-7.0.4.tgz"
+    "version" "7.0.4"
+    dependencies:
+      "string-width" "^4.2.0"
+      "strip-ansi" "^6.0.0"
+      "wrap-ansi" "^7.0.0"
+  
   "clone-deep@^4.0.1":
     "integrity" "sha512-neHB9xuzh/wk0dIHweyAXv2aPGZIVk3pLMe+/RNzINf17fe0OG96QroktYAUm7SM1PBnzTabaLboqqxDyMU+SQ=="
     "resolved" "https://registry.npmjs.org/clone-deep/-/clone-deep-4.0.1.tgz"
@@ -3273,15 +3292,7 @@ Lockfile:
     dependencies:
       "is-extendable" "^0.1.0"
   
-  "extend-shallow@^3.0.0":
-    "integrity" "sha512-BwY5b5Ql4+qZoefgMj2NUmx+tehVTH/Kf4k1ZEtOHNFcm2wSxMRo992l6X3TIgni2eZVTZ85xMOjF31fwZAj6Q=="
-    "resolved" "https://registry.npmjs.org/extend-shallow/-/extend-shallow-3.0.2.tgz"
-    "version" "3.0.2"
-    dependencies:
-      "assign-symbols" "^1.0.0"
-      "is-extendable" "^1.0.1"
-  
-  "extend-shallow@^3.0.2":
+  "extend-shallow@^3.0.0", "extend-shallow@^3.0.2":
     "integrity" "sha512-BwY5b5Ql4+qZoefgMj2NUmx+tehVTH/Kf4k1ZEtOHNFcm2wSxMRo992l6X3TIgni2eZVTZ85xMOjF31fwZAj6Q=="
     "resolved" "https://registry.npmjs.org/extend-shallow/-/extend-shallow-3.0.2.tgz"
     "version" "3.0.2"
@@ -3445,15 +3456,10 @@ Lockfile:
     dependencies:
       "micromatch" "^4.0.2"
   
-  "flow-parser@^0.121.0":
+  "flow-parser@^0.121.0", "flow-parser@0.*":
     "integrity" "sha512-1gIBiWJNR0tKUNv8gZuk7l9rVX06OuLzY9AoGio7y/JT4V1IZErEMEq2TJS+PFcw/y0RshZ1J/27VfK1UQzYVg=="
     "resolved" "https://registry.npmjs.org/flow-parser/-/flow-parser-0.121.0.tgz"
     "version" "0.121.0"
-  
-  "flow-parser@0.*":
-    "integrity" "sha512-+Mx87/GkmF5+FHk8IXc5WppD/oC4wB+05MuIv7qmIMgThND3RhOBGl7Npyc2L7NLVenme00ZlwEKVieiMz4bqA=="
-    "resolved" "https://registry.npmjs.org/flow-parser/-/flow-parser-0.181.1.tgz"
-    "version" "0.181.1"
   
   "fontfaceobserver@^2.1.0":
     "integrity" "sha512-6FPvD/IVyT4ZlNe7Wcn5Fb/4ChigpucKYSvD6a+0iMoLn2inpo711eyIcKjmDtE5XNcgAkSH9uN/nfAeZzHEfg=="
@@ -3551,7 +3557,7 @@ Lockfile:
     "resolved" "https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz"
     "version" "1.0.0-beta.2"
   
-  "get-caller-file@^2.0.1":
+  "get-caller-file@^2.0.1", "get-caller-file@^2.0.5":
     "integrity" "sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg=="
     "resolved" "https://registry.npmjs.org/get-caller-file/-/get-caller-file-2.0.5.tgz"
     "version" "2.0.5"
@@ -3976,6 +3982,11 @@ Lockfile:
     "resolved" "https://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz"
     "version" "0.1.1"
   
+  "is-extendable@^0.1.1":
+    "integrity" "sha512-5BMULNob1vgFX6EjQw5izWDxrecWK9AM72rugNr0TFldMOi0fj6Jk+zeKIt0xGj4cEfQIJth4w3OKWOJ4f+AFw=="
+    "resolved" "https://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz"
+    "version" "0.1.1"
+  
   "is-extendable@^1.0.1":
     "integrity" "sha512-arnXMxT1hhoKo9k1LZdmlNyJdDDfy2v0fXjFlmok4+i8ul/6WlbVge9bhM74OpNPQPMGUToDtz+KXa1PneJxOA=="
     "resolved" "https://registry.npmjs.org/is-extendable/-/is-extendable-1.0.1.tgz"
@@ -4354,14 +4365,7 @@ Lockfile:
     "resolved" "https://registry.npmjs.org/jsonify/-/jsonify-0.0.0.tgz"
     "version" "0.0.0"
   
-  "kind-of@^3.0.2":
-    "integrity" "sha512-NOW9QQXMoZGg/oqnVNoNTTIFEIid1627WCffUBJEdMxYApq7mNE7CpzucIPc+ZQg25Phej7IJSmX3hO+oblOtQ=="
-    "resolved" "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz"
-    "version" "3.2.2"
-    dependencies:
-      "is-buffer" "^1.1.5"
-  
-  "kind-of@^3.0.3":
+  "kind-of@^3.0.2", "kind-of@^3.0.3":
     "integrity" "sha512-NOW9QQXMoZGg/oqnVNoNTTIFEIid1627WCffUBJEdMxYApq7mNE7CpzucIPc+ZQg25Phej7IJSmX3hO+oblOtQ=="
     "resolved" "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz"
     "version" "3.2.2"
@@ -5572,9 +5576,9 @@ Lockfile:
       "strip-json-comments" "~2.0.1"
   
   "react-devtools-core@^4.23.0":
-    "integrity" "sha512-OFB1cp8bsh5Kc6oOJ3ZzH++zMBtydwD53yBYa50FKEGyOOdgdbJ4VsCsZhN/6F5T4gJfrZraU6EKda8P+tMLtg=="
-    "resolved" "https://registry.npmjs.org/react-devtools-core/-/react-devtools-core-4.24.7.tgz"
-    "version" "4.24.7"
+    "integrity" "sha512-Rw7FzYOOzcfyUPaAm9P3g0tFdGqGq2LLiAI+wjYcp6CsF3DeeMrRS3HZAho4s273C29G/DJhx0e8BpRE/QZNGg=="
+    "resolved" "https://registry.npmjs.org/react-devtools-core/-/react-devtools-core-4.24.0.tgz"
+    "version" "4.24.0"
     dependencies:
       "shell-quote" "^1.6.1"
       "ws" "^7"
@@ -5665,6 +5669,14 @@ Lockfile:
       "react-freeze" "^1.0.0"
       "warn-once" "^0.1.0"
   
+  "react-native-vector-icons@^9.2.0":
+    "integrity" "sha512-wKYLaFuQST/chH3AJRjmOLoLy3JEs1JR6zMNgTaemFpNoXs0ztRnTxcxFD9xhX7cJe1/zoN5BpQYe7kL0m5yyA=="
+    "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-9.2.0.tgz"
+    "version" "9.2.0"
+    dependencies:
+      "prop-types" "^15.7.2"
+      "yargs" "^16.1.1"
+  
   "react-native-web@0.17.7":
     "integrity" "sha512-4OOU/QjyRySOXyHfTvljEMS4VXKn42Qs3y9uHDPMwaCUFjwg0oasR/j706OaVgan9kF4Ipa2vJ3F6Z/Xqy8KeQ=="
     "resolved" "https://registry.npmjs.org/react-native-web/-/react-native-web-0.17.7.tgz"
@@ -5678,7 +5690,7 @@ Lockfile:
       "normalize-css-color" "^1.0.2"
       "prop-types" "^15.6.0"
   
-  "react-native@*", "react-native@0.68.2":
+  "react-native@*", "react-native@^0.68.2":
     "integrity" "sha512-qNMz+mdIirCEmlrhapAtAG+SWVx6MAiSfCbFNhfHqiqu1xw1OKXdzIrjaBEPihRC2pcORCoCHduHGQe/Pz9Yuw=="
     "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.68.2.tgz"
     "version" "0.68.2"
@@ -5987,11 +5999,6 @@ Lockfile:
     "integrity" "sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g=="
     "resolved" "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz"
     "version" "5.1.2"
-  
-  "safe-buffer@~5.2.0":
-    "integrity" "sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ=="
-    "resolved" "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz"
-    "version" "5.2.1"
   
   "safe-json-stringify@~1":
     "integrity" "sha512-gH8eh2nZudPQO6TytOvbxnuhYBOvDBBLW52tz5q6X58lJcd/tkmqFR+5Z9adS8aJtURSXWThWy/xJtJwixErvg=="
@@ -6362,14 +6369,7 @@ Lockfile:
     "resolved" "https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz"
     "version" "2.0.0"
   
-  "string_decoder@^1.1.1":
-    "integrity" "sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA=="
-    "resolved" "https://registry.npmjs.org/string_decoder/-/string_decoder-1.3.0.tgz"
-    "version" "1.3.0"
-    dependencies:
-      "safe-buffer" "~5.2.0"
-  
-  "string_decoder@~1.1.1":
+  "string_decoder@^1.1.1", "string_decoder@~1.1.1":
     "integrity" "sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg=="
     "resolved" "https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz"
     "version" "1.1.1"
@@ -7051,6 +7051,11 @@ Lockfile:
     "resolved" "https://registry.npmjs.org/y18n/-/y18n-4.0.3.tgz"
     "version" "4.0.3"
   
+  "y18n@^5.0.5":
+    "integrity" "sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA=="
+    "resolved" "https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz"
+    "version" "5.0.8"
+  
   "yallist@^4.0.0":
     "integrity" "sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A=="
     "resolved" "https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz"
@@ -7063,6 +7068,11 @@ Lockfile:
     dependencies:
       "camelcase" "^5.0.0"
       "decamelize" "^1.2.0"
+  
+  "yargs-parser@^20.2.2":
+    "integrity" "sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w=="
+    "resolved" "https://registry.npmjs.org/yargs-parser/-/yargs-parser-20.2.9.tgz"
+    "version" "20.2.9"
   
   "yargs@^15.1.0", "yargs@^15.3.1":
     "integrity" "sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A=="
@@ -7080,6 +7090,19 @@ Lockfile:
       "which-module" "^2.0.0"
       "y18n" "^4.0.0"
       "yargs-parser" "^18.1.2"
+  
+  "yargs@^16.1.1":
+    "integrity" "sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw=="
+    "resolved" "https://registry.npmjs.org/yargs/-/yargs-16.2.0.tgz"
+    "version" "16.2.0"
+    dependencies:
+      "cliui" "^7.0.2"
+      "escalade" "^3.1.1"
+      "get-caller-file" "^2.0.5"
+      "require-directory" "^2.1.1"
+      "string-width" "^4.2.0"
+      "y18n" "^5.0.5"
+      "yargs-parser" "^20.2.2"
   
   "yocto-queue@^0.1.0":
     "integrity" "sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q=="
